@@ -1,0 +1,14 @@
+batch_size: 128
+max_iterations: 100
+noise_factor: 0.000001
+f: KL #['KL', 'JS', 'logD']
+eta_trans: 0.00001
+eta_eulers: 0.001
+Np: 1
+Nq: 1
+device: 0 # -1 for cpu
+n: 10
+seed: 40
+refinement_method: 'dgflow' # ['dgflow', 'graspnet', 'metropolis']
+sampler: 'ACRONYM_VAE' # ["ACRONYM_VAE", "ACRONYM_GAN", "V1_VAE", "heuristics", "uniform"]
+model_path: 'models/164157041125/66.pt'
